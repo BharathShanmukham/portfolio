@@ -8,7 +8,7 @@
 /* Body and General Layout */
 html, body {
 	height: 100%; /* Ensure the page takes up full height */
-	font-family: Arial, sans-serif;
+	font-family: 'Arial', sans-serif;
 	line-height: 1.6;
 	background-color: #f4f4f4;
 	color: #333;
@@ -22,7 +22,7 @@ body {
 /* Main Content Section */
 main {
 	flex-grow: 1;
-	padding: 20px;
+	padding: 40px 20px;
 }
 
 /* Header Section */
@@ -30,11 +30,13 @@ header {
 	background-color: #333;
 	color: #fff;
 	text-align: center;
-	padding: 20px;
+	padding: 40px 20px;
+	margin-bottom: 30px;
 }
 
 	header h1 {
 		margin: 10px 0;
+		font-size: 36px;
 	}
 
 	header nav ul {
@@ -51,6 +53,7 @@ header {
 				color: #fff;
 				text-decoration: none;
 				font-weight: bold;
+				font-size: 18px;
 			}
 
 				header nav ul li a:hover {
@@ -59,16 +62,37 @@ header {
 
 /* Section Styling */
 section {
-	margin-bottom: 30px;
+	margin-bottom: 40px;
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h2, h3 {
+h2 {
+	font-size: 28px;
 	color: #333;
+	margin-bottom: 20px;
 }
 
+h3 {
+	font-size: 24px;
+	color: #333;
+	margin-bottom: 15px;
+}
+
+p {
+	font-size: 16px;
+	color: #666;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+/* Columns Layout */
 .columns {
 	display: flex;
 	gap: 20px;
+	justify-content: space-between;
 }
 
 .column {
@@ -77,16 +101,16 @@ h2, h3 {
 
 .toggle-content {
 	display: none; /* Initially hide the content */
-	background-color: #fff;
-	padding: 10px;
+	background-color: #f9f9f9;
+	padding: 15px;
 	border-radius: 5px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* About Section - Single Column */
 #about {
-	background-color: #fff;
 	padding: 20px;
+	background-color: #fff;
 	border-radius: 5px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -100,17 +124,40 @@ footer {
 	background-color: #333;
 	color: #fff;
 	text-align: center;
-	padding: 10px;
+	padding: 20px;
 	width: 100%;
 	position: fixed;
 	bottom: 0;
 	left: 0;
+	font-size: 16px;
+}
+
+/* Hover effects for clickable content */
+.toggle-header {
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	color: #007BFF;
+	padding: 10px;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s;
+}
+
+	.toggle-header:hover {
+		background-color: #007BFF;
+		color: white;
+	}
+
+.toggle-content p {
+	font-size: 16px;
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
 	header h1 {
-		font-size: 24px;
+		font-size: 28px;
 	}
 
 	header nav ul li {
@@ -119,7 +166,7 @@ footer {
 	}
 
 		header nav ul li a {
-			font-size: 18px;
+			font-size: 16px;
 		}
 
 	.columns {
@@ -127,7 +174,7 @@ footer {
 	}
 
 	main {
-		padding: 10px;
+		padding: 20px;
 	}
 
 	footer {
