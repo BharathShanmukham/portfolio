@@ -21,7 +21,7 @@ body {
 
 /* Main Content Section */
 main {
-	flex-grow: 1; /* This allows the main content to grow and fill the available space */
+	flex-grow: 1;
 	padding: 20px;
 }
 
@@ -62,11 +62,28 @@ section {
 	margin-bottom: 30px;
 }
 
-h2 {
+h2, h3 {
 	color: #333;
 }
 
-/* About Section */
+.columns {
+	display: flex;
+	gap: 20px;
+}
+
+.column {
+	flex: 1;
+}
+
+.toggle-content {
+	display: none; /* Initially hide the content */
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section - Single Column */
 #about {
 	background-color: #fff;
 	padding: 20px;
@@ -77,39 +94,6 @@ h2 {
 	#about p {
 		margin-top: 10px;
 	}
-
-/* Projects Section */
-#projects {
-	background-color: #fff;
-	padding: 20px;
-	border-radius: 5px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-	#projects .project {
-		margin-bottom: 15px;
-	}
-
-	#projects h3 {
-		margin-bottom: 5px;
-	}
-
-/* Contact Section */
-#contact {
-	background-color: #fff;
-	padding: 20px;
-	border-radius: 5px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-	#contact a {
-		color: #333;
-		text-decoration: none;
-	}
-
-		#contact a:hover {
-			text-decoration: underline;
-		}
 
 /* Footer Section */
 footer {
@@ -137,6 +121,10 @@ footer {
 		header nav ul li a {
 			font-size: 18px;
 		}
+
+	.columns {
+		flex-direction: column;
+	}
 
 	main {
 		padding: 10px;
