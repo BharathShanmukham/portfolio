@@ -92,11 +92,12 @@ main {
 }
 
 .profile-text {
-    font-size: calc(1rem + 0.3vw);
-    line-height: 1.6;
-    color: #555;
-    max-width: 800px;
-    margin: 0 auto;
+    font-size: calc(1rem + 0.3vw);  /* Responsive font size */
+    line-height: 1.6;  /* Consistent line height */
+    color: #555;  /* Soft text color */
+    max-width: 900px;  /* Increased max width for larger screens */
+    width: 90%;  /* Set width to 90% of the parent container */
+    margin: 0 auto;  /* Center the text horizontally */
 }
 
 /* Navigation Styling */
@@ -218,6 +219,11 @@ footer {
 @media (max-width: 768px) {
     header h1 {
         font-size: 28px;
+    }
+
+    .profile-text {
+        max-width: 100%;  /* Full width for smaller screens */
+        padding: 0 20px;  /* Add some padding for smaller screens */
     }
 
     header nav ul li {
