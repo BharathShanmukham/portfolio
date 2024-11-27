@@ -30,13 +30,13 @@ header {
 	background-color: #333;
 	color: #fff;
 	text-align: center;
-	padding: 40px 20px;
-	margin-bottom: 30px;
+	padding: 10px 10px;
+	margin-bottom: 10px;
 }
 
 	header h1 {
 		margin: 5px 0;
-		font-size: 20px;
+		font-size: 25px;
 	}
 
 	/* Style for the navigation container */
