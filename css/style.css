@@ -36,6 +36,10 @@ header {
 
 .header-title {
     font-size: calc(1.5rem + 0.5vw); /* Responsive title size */
+    background: linear-gradient(45deg, #ae00ff, #00e1ff);
+    -webkit-background-clip: text;  /* For Safari */
+    background-clip: text; /* For other browsers */
+    color: transparent; /* Ensure the text itself is transparent */
     margin-bottom: 0.5rem;
 }
 
