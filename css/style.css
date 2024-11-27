@@ -19,12 +19,6 @@ body {
     flex-direction: column;
 }
 
-/* Main Content Section */
-main {
-    flex-grow: 1;
-    padding: 40px 20px;
-}
-
 /* Header Section */
 header {
     background-color: #333;
