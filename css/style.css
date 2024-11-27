@@ -1,0 +1,208 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Layout */
+html, body {
+    height: 100%; /* Ensure the page takes up full height */
+    font-family: 'Aptos Display', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main Content Section */
+main {
+    flex-grow: 1;
+    padding: 40px 20px;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+
+.header-title {
+    font-size: calc(1.5rem + 0.5vw); /* Responsive title size */
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-image {
+    width: auto;
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-text {
+    font-size: calc(1rem + 0.3vw);
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Navigation Styling */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    background-color: #800080;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #4b0082;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Columns Layout */
+.columns {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+}
+
+.toggle-content {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section - Single Column */
+#about {
+    padding: 20px;
+}
+
+#about p {
+    margin-top: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* Hover effects for clickable content */
+.toggle-header {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #007BFF;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.toggle-header:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.toggle-content p {
+    font-size: 16px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
