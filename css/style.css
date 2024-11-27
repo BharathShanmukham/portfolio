@@ -36,13 +36,12 @@ header {
 
 .header-title {
     font-size: calc(1.5rem + 0.5vw); /* Responsive title size */
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.name-gradient {
-    background: linear-gradient(45deg, #6a0dad, #1e90ff);
-    -webkit-background-clip: text;
-    color: transparent;
+.header-Subtitle {
+    font-size: calc(1.0rem + 0.5vw); /* Responsive title size */
+    margin-bottom: 0.5rem;
 }
 
 .profile-section {
