@@ -7,7 +7,7 @@
 
 /* Body and General Layout */
 html, body {
-    height: 100%;
+    height: 100%; /* Ensure the page takes up full height */
     font-family: 'Aptos Display', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
@@ -26,7 +26,7 @@ main {
 }
 
 /* Header Section */
-.header {
+header {
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -57,79 +57,83 @@ main {
     color: white; /* White color for the remaining text */
 }
 
-/* 'Bharath M S' Style */
-.name {
-    background: linear-gradient(45deg, #800080, #0000FF); /* Purple to Blue gradient */
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 3rem; /* Larger size */
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-/* Subtitle (Remaining heading) Style */
-.subtitle {
-    font-size: 1.5rem; /* Slightly smaller size */
-    color: white;
-    display: block;
-}
-
 /* Profile Section */
 .profile-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1rem; /* Spacing between image and text */
 }
 
 .profile-image {
     width: auto;
-    max-width: 150px;
-    height: auto;
+    max-width: 150px; /* Adjust size */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
 
 .profile-text {
-    font-size: calc(1rem + 0.3vw);  /* Responsive font size */
-    line-height: 1.6;  /* Consistent line height */
-    color: #555;  /* Soft text color */
-    max-width: 900px;  /* Increased max width for larger screens */
-    width: 90%;  /* Set width to 90% of the parent container */
-    margin: 0 auto;  /* Center the text horizontally */
+    font-size: calc(1rem + 0.3vw); /* Responsive font size */
+    line-height: 1.6; /* Consistent line height */
+    color: #555; /* Softer text color */
+    max-width: 900px; /* Increased max width for larger screens */
+    width: 90%; /* Set width to 90% of the parent container */
+    margin: 0 auto; /* Center the text horizontally */
 }
 
-/* Navigation Styling */
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 1.5rem; /* Adjust for smaller screens */
+    }
+
+    .profile-image {
+        max-width: 100px; /* Smaller image */
+    }
+
+    .profile-text {
+        max-width: 100%; /* Full width for smaller screens */
+        padding: 0 20px; /* Add some padding for smaller screens */
+    }
+}
+
+/* Navigation Section */
+nav {
+    display: flex; /* Enables flexbox for horizontal alignment */
+    justify-content: center; /* Centers the links horizontally */
+    align-items: center; /* Aligns the links vertically (if needed) */
+    margin: 20px 0; /* Adds spacing above and below the navigation */
+}
+
 nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
+    display: flex; /* Makes the list items align horizontally */
+    list-style: none; /* Removes default bullet points */
+    padding: 0; /* Resets padding */
+    margin: 0; /* Resets margin */
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 10px; /* Adds spacing between each box */
 }
 
 nav ul li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 50px;
-    background-color: #800080;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    border-radius: 5px;
-    text-align: center;
+    display: flex; /* Ensures content inside the box can be centered */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    width: 120px; /* Sets a fixed width for all boxes */
+    height: 50px; /* Sets a fixed height for all boxes */
+    background-color: #800080; /* Purple background for the boxes */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Removes underlines */
+    font-weight: bold; /* Bold text */
+    font-size: 18px; /* Sets the font size */
+    border-radius: 5px; /* Adds rounded corners */
+    text-align: center; /* Centers the text inside the boxes */
 }
 
 nav ul li a:hover {
-    background-color: #4b0082;
+    background-color: #4b0082; /* Darker purple on hover */
 }
 
 /* Section Styling */
@@ -141,9 +145,16 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h2, h3 {
+h2 {
+    font-size: 28px;
     color: #333;
     margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
 }
 
 p {
@@ -165,7 +176,7 @@ p {
 }
 
 .toggle-content {
-    display: none;
+    display: none; /* Initially hide the content */
     background-color: #f9f9f9;
     padding: 15px;
     border-radius: 5px;
@@ -175,6 +186,9 @@ p {
 /* About Section - Single Column */
 #about {
     padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #about p {
@@ -191,6 +205,7 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
+    font-size: 16px;
 }
 
 /* Hover effects for clickable content */
@@ -219,11 +234,6 @@ footer {
 @media (max-width: 768px) {
     header h1 {
         font-size: 28px;
-    }
-
-    .profile-text {
-        max-width: 100%;  /* Full width for smaller screens */
-        padding: 0 20px;  /* Add some padding for smaller screens */
     }
 
     header nav ul li {
