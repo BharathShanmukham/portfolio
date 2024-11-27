@@ -8,7 +8,7 @@
 /* Body and General Layout */
 html, body {
 	height: 100%; /* Ensure the page takes up full height */
-	font-family: 'Arial', sans-serif;
+	font-family: 'Aptos Display', sans-serif;
 	line-height: 1.6;
 	background-color: #f4f4f4;
 	color: #333;
@@ -36,7 +36,7 @@ header {
 
 	header h1 {
 		margin: 10px 0;
-		font-size: 36px;
+		font-size: 20px;
 	}
 
 	/* Style for the navigation container */
