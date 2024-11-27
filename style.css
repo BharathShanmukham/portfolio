@@ -39,40 +39,48 @@ header {
 		font-size: 36px;
 	}
 
-	header nav {
+	/* Style for the navigation container */
+	nav {
 		display: flex; /* Enables flexbox for horizontal alignment */
-		justify-content: center; /* Centers items horizontally */
-		align-items: center; /* Centers items vertically within the container */
-		margin: 20px 0; /* Adds some spacing around the navigation bar */
+		justify-content: center; /* Centers the links horizontally */
+		align-items: center; /* Aligns the links vertically (if needed) */
+		margin: 20px 0; /* Adds spacing above and below the navigation */
 	}
 
-	header nav ul {
+	/* Reset list styles and remove padding/margin */
+	nav ul {
 		display: flex; /* Makes the list items align horizontally */
-		list-style: none; /* Removes the default list styling */
-		padding: 0; /* Removes padding around the list */
-		margin: 0; /* Removes margin around the list */
+		list-style: none; /* Removes default bullet points */
+		padding: 0; /* Resets padding */
+		margin: 0; /* Resets margin */
 	}
 
-	header nav ul li {
-		margin: 0 10px; /* Adds spacing between the boxes */
+	/* Style individual list items */
+	nav ul li {
+		margin: 0 10px; /* Adds spacing between each box */
 	}
 
-	header nav ul li a {
-		display: block; /* Ensures the box dimensions are applied to the entire link */
-		padding: 10px 20px; /* Adds spacing inside the boxes */
-		color: #fff; /* Sets text color */
-		background-color: #007BFF; /* Sets the background color of the boxes */
-		text-decoration: none; /* Removes underlines from links */
-		font-weight: bold; /* Makes the text bold */
-		font-size: 18px; /* Sets font size */
-		border-radius: 5px; /* Adds rounded corners to the boxes */
-		text-align: center; /* Centers text within each box */
+	/* Style for navigation links */
+	nav ul li a {
+		display: flex; /* Ensures content inside the box can be centered */
+		justify-content: center; /* Centers text horizontally */
+		align-items: center; /* Centers text vertically */
+		width: 120px; /* Sets a fixed width for all boxes */
+		height: 50px; /* Sets a fixed height for all boxes */
+		background-color: #800080; /* Purple background for the boxes */
+		color: #fff; /* White text color */
+		text-decoration: none; /* Removes underlines */
+		font-weight: bold; /* Bold text */
+		font-size: 18px; /* Sets the font size */
+		border-radius: 5px; /* Adds rounded corners */
+		text-align: center; /* Centers the text inside the boxes */
 	}
 
-	header nav ul li a:hover {
-		background-color: #0056b3; /* Changes the background color on hover */
-		text-decoration: underline; /* Underlines the text on hover */
+	/* Hover effect for navigation links */
+	nav ul li a:hover {
+		background-color: #4b0082; /* Darker purple on hover */
 	}
+
 
 
 /* Section Styling */
