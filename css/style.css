@@ -45,6 +45,7 @@ header {
 
 .header-Subtitle {
     font-size: calc(1.0rem + 0.5vw); /* Responsive title size */
+    font-weight: normal;
     margin-bottom: 0.5rem;
 }
 
