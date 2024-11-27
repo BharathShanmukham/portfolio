@@ -39,26 +39,41 @@ header {
 		font-size: 36px;
 	}
 
-	header nav ul {
-		list-style: none;
-		padding: 0;
+	header nav {
+		display: flex; /* Enables flexbox for horizontal alignment */
+		justify-content: center; /* Centers items horizontally */
+		align-items: center; /* Centers items vertically within the container */
+		margin: 20px 0; /* Adds some spacing around the navigation bar */
 	}
 
-		header nav ul li {
-			display: inline;
-			margin-right: 20px;
-		}
+	header nav ul {
+		display: flex; /* Makes the list items align horizontally */
+		list-style: none; /* Removes the default list styling */
+		padding: 0; /* Removes padding around the list */
+		margin: 0; /* Removes margin around the list */
+	}
 
-			header nav ul li a {
-				color: #fff;
-				text-decoration: none;
-				font-weight: bold;
-				font-size: 18px;
-			}
+	header nav ul li {
+		margin: 0 10px; /* Adds spacing between the boxes */
+	}
 
-				header nav ul li a:hover {
-					text-decoration: underline;
-				}
+	header nav ul li a {
+		display: block; /* Ensures the box dimensions are applied to the entire link */
+		padding: 10px 20px; /* Adds spacing inside the boxes */
+		color: #fff; /* Sets text color */
+		background-color: #007BFF; /* Sets the background color of the boxes */
+		text-decoration: none; /* Removes underlines from links */
+		font-weight: bold; /* Makes the text bold */
+		font-size: 18px; /* Sets font size */
+		border-radius: 5px; /* Adds rounded corners to the boxes */
+		text-align: center; /* Centers text within each box */
+	}
+
+	header nav ul li a:hover {
+		background-color: #0056b3; /* Changes the background color on hover */
+		text-decoration: underline; /* Underlines the text on hover */
+	}
+
 
 /* Section Styling */
 section {
