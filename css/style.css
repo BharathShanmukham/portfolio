@@ -52,7 +52,7 @@ header {
 .profile-section {
     display: flex;
     align-items: center;  /* Vertically center the content */
-    justify-content: space-between; /* Position the image on the left and text on the right */
+    justify-content: center; /* Horizontally center the image and text */
     padding: 20px;
 }
 
@@ -63,6 +63,7 @@ header {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     object-fit: cover;       /* Ensures the image fits inside the container */
+    margin-right: 20px;  /* Space between image and text */
 }
 
 .profile-text {
