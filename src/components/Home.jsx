@@ -33,7 +33,7 @@ export default function Home() {
     >
       <div
         className="absolute inset-0 bg-noise opacity-10 pointer-events-none"
-        style={{ backgroundImage: "url('./src/assets/Images/noise-texture.png')" }}
+        style={{ backgroundImage: "url('/portfolio/noise-texture.png')" }}
       ></div>
 
       <div className="absolute inset-0">
@@ -100,7 +100,7 @@ export default function Home() {
           transition={{ duration: 1.5, repeat: Infinity }}
           onClick={handleScroll}
         >
-          <img src="./src/assets/Icons/scroll-down-icon.png" alt="Scroll Down" className="w-12 h-12 animate-pulse" />
+          <img src="/portfolio/scroll-down-icon.png" alt="Scroll Down" className="w-12 h-12 animate-pulse" />
         </motion.div>
       </div>
     </section>
