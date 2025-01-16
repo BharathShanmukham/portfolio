@@ -1,8 +1,9 @@
 import { motion, AnimatePresence } from "motion/react";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 export default function Experience() {
     const [activeExperience, setActiveExperience] = useState(null);
+    const timelineRef = useRef(null);
 
     const experiences = [
         {
@@ -44,7 +45,7 @@ export default function Experience() {
         <section id="experience" className="relative bg-[#171717] text-white font-poppins px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-16">
             <div
                 className="absolute inset-0 bg-noise opacity-10 pointer-events-none"
-                style={{ backgroundImage: "url('/portfolio/noise-texture.png')"}}
+                style={{ backgroundImage: "url('/portfolio/noise-texture.png')" }}
             ></div>
 
             <motion.div
@@ -59,8 +60,9 @@ export default function Experience() {
 
             <div className="relative max-w-screen-lg mx-auto">
                 <div
+                    ref={timelineRef}
                     className="border-l-4 border-purple-500 absolute left-1/2 transform -translate-x-1/2"
-                    style={{ height: `calc(100% - 40px)` }} // Adjust dynamically
+                    style={{ height: "100%" }}
                 ></div>
                 {experiences.map((exp, index) => (
                     <motion.div
@@ -85,19 +87,25 @@ export default function Experience() {
             <AnimatePresence>
                 {activeExperience && (
                     <motion.div
-                        className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+                        className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 sm:p-8 overflow-y-auto"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         onClick={() => setActiveExperience(null)}
                     >
                         <motion.div
-                            className="bg-[#1E1E1E] p-8 rounded-lg shadow-lg border border-purple-500 w-11/12 md:w-2/3 lg:w-1/2 relative"
+                            className="bg-[#1E1E1E] p-4 sm:p-8 rounded-lg shadow-lg border border-purple-500 w-full max-w-lg sm:w-11/12 md:w-2/3 lg:w-1/2 relative max-h-[90vh] overflow-y-auto"
                             initial={{ scale: 0.8, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
                             transition={{ duration: 0.4, ease: "easeOut" }}
                             onClick={(e) => e.stopPropagation()}
                         >
+                            <button
+                                className="absolute top-2 right-2 text-white text-xl hover:text-gray-400"
+                                onClick={() => setActiveExperience(null)}
+                            >
+                                ×
+                            </button>
                             <h3 className="text-2xl font-bold text-purple-400 mb-4">{activeExperience.company}</h3>
                             <p className="text-sm text-gray-400">{activeExperience.duration} - {activeExperience.location}</p>
                             <h4 className="text-lg font-semibold text-blue-400 mt-4">{activeExperience.role}</h4>
@@ -107,7 +115,7 @@ export default function Experience() {
                                 ))}
                             </ul>
                             <button
-                                className="mt-6 px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition"
+                                className="mt-6 px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition w-full sm:w-auto"
                                 onClick={() => setActiveExperience(null)}
                             >
                                 Close
