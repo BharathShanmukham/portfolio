@@ -44,7 +44,7 @@ export default function Experience() {
         <section id="experience" className="relative bg-[#171717] text-white font-poppins px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-16">
             <div
                 className="absolute inset-0 bg-noise opacity-10 pointer-events-none"
-                style={{ backgroundImage: "url('./src/assets/Images/noise-texture.png')" }}
+                style={{ backgroundImage: "url('/portfolio/noise-texture.png')" }}
             ></div>
 
             <motion.div
