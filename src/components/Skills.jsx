@@ -41,7 +41,7 @@ export default function Skills() {
     const skillCategories = [
         {
             title: "XR Development",
-            icon: "./src/assets/Icons/xr-icon.png",
+            icon: "/portfolio/xr-icon.png",
             skills: [
                 { name: "Unity", level: 90 },
                 { name: "WebXR", level: 80 },
@@ -52,7 +52,7 @@ export default function Skills() {
         },
         {
             title: "Front-End Development",
-            icon: "./src/assets/Icons/frontend-icon.png",
+            icon: "/portfolio/frontend-icon.png",
             skills: [
                 { name: "React.js", level: 85 },
                 { name: "Tailwind CSS", level: 80 },
@@ -63,7 +63,7 @@ export default function Skills() {
         },
         {
             title: "Design Tools",
-            icon: "./src/assets/Icons/design-icon.png",
+            icon: "/portfolio/design-icon.png",
             skills: [
                 { name: "3ds Max", level: 90 },
                 { name: "Blender", level: 80 },
@@ -74,7 +74,7 @@ export default function Skills() {
         },
         {
             title: "Project Management",
-            icon: "./src/assets/Icons/management-icon.png",
+            icon: "/portfolio/management-icon.png",
             skills: [
                 { name: "Global Collaboration", level: 85 },
                 { name: "Excel Automation", level: 80 },
@@ -94,7 +94,7 @@ export default function Skills() {
             {/* Background Noise Texture */}
             <div 
                 className="absolute inset-0 bg-noise opacity-10 pointer-events-none"
-                style={{ backgroundImage: "url('./src/assets/Images/noise-texture.png')" }}
+                style={{ backgroundImage: "url('/portfolio/noise-texture.png')" }}
             ></div>
 
             <motion.div

@@ -30,13 +30,13 @@ export default function Projects() {
         {
             title: "WebGL Material Editor",
             description: "A versatile product configurator enabling users to explore and modify materials on any 3D model.",
-            image: "./src/assets/Images/material-editor.png",
+            image: "/portfolio/material-editor.png",
             link: "https://bharathshanmukham.github.io/MaterialEditor/",
         },
         {
             title: "More Projects Coming Soon",
             description: "Exciting new projects are on the way. Stay tuned!",
-            image: "./src/assets/Images/coming-soon.png",
+            image: "/portfolio/coming-soon.png",
             link: "",
         }
     ];
@@ -50,7 +50,7 @@ export default function Projects() {
             {/* Background Noise Texture */}
             <div 
                 className="absolute inset-0 bg-noise opacity-10 pointer-events-none"
-                style={{ backgroundImage: "url('./src/assets/Images/noise-texture.png')" }}
+                style={{ backgroundImage: "url('/portfolio/noise-texture.png')" }}
             ></div>
 
             <motion.div

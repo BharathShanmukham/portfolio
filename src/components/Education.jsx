@@ -49,14 +49,14 @@ export default function EducationCertifications() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-screen-lg mx-auto">
                 <div className="bg-[#1E1E1E] p-6 rounded-lg border border-purple-500">
                     <div className="flex items-center mb-4">
-                        <img src="./src/assets/Icons/education.png" alt="Education Icon" className="w-10 h-10 mr-4" />
+                        <img src="/portfolio/education.png" alt="Education Icon" className="w-10 h-10 mr-4" />
                         <h3 className="text-xl font-semibold text-white">Education</h3>
                     </div>
                     <EduCertCard {...education} />
                 </div>
                 <div className="bg-[#1E1E1E] p-6 rounded-lg border border-purple-500">
                     <div className="flex items-center mb-4">
-                        <img src="./src/assets/Icons/certification.png" alt="Certification Icon" className="w-10 h-10 mr-4" />
+                        <img src="/portfolio/certification.png" alt="Certification Icon" className="w-10 h-10 mr-4" />
                         <h3 className="text-xl font-semibold text-white">Certifications & Awards</h3>
                     </div>
                     <div className="space-y-4">

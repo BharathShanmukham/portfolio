@@ -36,9 +36,9 @@ export default function Footer() {
             </motion.div>
             
             <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-                <ContactItem icon="./src/assets/Icons/email.png" title="Email" value="bharath.nimme@gmail.com" />
-                <ContactItem icon="./src/assets/Icons/phone.png" title="Phone" value="+91 6381406329" />
-                <ContactItem icon="./src/assets/Icons/linkedin.png" title="LinkedIn" value="LinkedIn Profile" link="https://www.linkedin.com/in/bharath-m-s-88ba17190" />
+                <ContactItem icon="/portfolio/email.png" title="Email" value="bharath.nimme@gmail.com" />
+                <ContactItem icon="/portfolio/phone.png" title="Phone" value="+91 6381406329" />
+                <ContactItem icon="/portfolio/linkedin.png" title="LinkedIn" value="LinkedIn Profile" link="https://www.linkedin.com/in/bharath-m-s-88ba17190" />
             </div>
         </footer>
     );

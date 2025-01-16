@@ -32,7 +32,7 @@ export default function About() {
                 {/* Background Textures */}
                 <div 
                     className="absolute inset-0 bg-noise opacity-10 pointer-events-none"
-                    style={{ backgroundImage: "url('./src/assets/Images/noise-texture.png')" }}
+                    style={{ backgroundImage: "url('/portfolio/noise-texture.png')" }}
                 ></div>
 
                 {/* Left Section: Profile Image */}
@@ -49,7 +49,7 @@ export default function About() {
                         whileHover={{ scale: 1.05 }}
                     >
                         <img
-                            src="./src/assets/Images/profile.png"
+                            src="/portfolio/profile.png"
                             alt="Bharath M S"
                             className="w-full h-full object-cover rounded-full z-10"
                             loading="lazy"
@@ -95,19 +95,19 @@ export default function About() {
                         <Card
                             title="Technical Expertise"
                             description="Proficient in Unity, WebXR, Hololens, 3D Modeling, React.js, and Three.js"
-                            icon="./src/assets/Icons/technical.png"
+                            icon="/portfolio/technical.png"
                         />
 
                         <Card
                             title="Global Collaboration"
                             description="Experience working with international teams, focusing on operational efficiencies and innovative solutions"
-                            icon="./src/assets/Icons/collaboration.png"
+                            icon="/portfolio/collaboration.png"
                         />
 
                         <Card
                             title="Cross-disciplinary Approach"
                             description="Combining mechanical engineering principles with modern XR development practices"
-                            icon="./src/assets/Icons/cross-disciplinary.png"
+                            icon="/portfolio/cross-disciplinary.png"
                         />
                     </motion.div>
                 </div>
