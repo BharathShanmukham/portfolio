@@ -40,7 +40,7 @@ export default function EducationCertifications() {
 
     return (
         <section id="education" className="relative bg-[#171717] text-white font-poppins px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-16" aria-label="Education & Certifications Section">
-            <div className="absolute inset-0 bg-noise opacity-10 pointer-events-none" style={{ backgroundImage: "url('/portfolio/noise-texture.png')" }}></div>
+            <div className="absolute inset-0 bg-noise opacity-10 pointer-events-none" style={{ backgroundImage: "url('/portfolio/noise-texture.png')" }}></div> 
 
             <motion.div className="text-center mb-12" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.8, ease: "easeOut" }}>
                 <h2 className="text-3xl sm:text-4xl font-bold text-purple-400">Education & Certifications</h2>
